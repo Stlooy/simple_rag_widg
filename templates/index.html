@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>RAG Chatbot made by </title>
+  <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+  <button id="chat-bubble">💬</button>
+
+  <div class="chat-container" id="chat-container">
+    <div class="chat-header">RAG Chatbot</div>
+
+    <div class="chat-box" id="chat-box">
+      <div class="message bot">Hi! Ask me anything about your documents.</div>
+    </div>
+
+    <div class="chat-input">
+      <input type="text" id="user-input" placeholder="Type your question..." autocomplete="off">
+      <button type="button" id="send-btn">Send</button>
+    </div>
+  </div>
+
+  <script src="{{ url_for('static', filename='script.js') }}"></script>
+</body>
+</html>
